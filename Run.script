@@ -1,0 +1,5 @@
+python CreateSyntheticData.py
+
+python MFSDA_run.py --shapeData Shapes.txt --coordData Shape_Tamplate.vtk --covariate Cov.csv --outputDir ./Results/
+
+python MFSDA_createShapes.py --shape ./Shape_Tamplate.vtk --pvalues ./Results/pvalues.json --efit ./Results/efit.json --covariates Time Group --output ./Results/Results.vtk
